@@ -12,7 +12,7 @@ The repository contains two codes:
 period of time;
 - execution. takes preprocessed (preprocessing code is not posted) twitter data, runs regularized (l1) maxent 
 classification based on existing bullish or bearish tags (which constitutes a training set); filters obtained 
-dummy through the news polarity variable received from the Newscraper. and used reply and retweet connection between
+dummy through the news polarity variable received from the Newscraper. and uses reply and retweet connection between
 the authors to run the (geo)spatial lag regression using this filtered variable.
 
 The spatial lag coefficient determines herding level for a day
