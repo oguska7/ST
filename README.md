@@ -7,6 +7,13 @@ mutual mimicry among investors may temporarily move asset prices away from funda
 which in turn would increase the spread around the mean.
 
 To model herding and contrarianism in social media, Twitter data (StockTwits, proprietary) are used. 
-The repository contains two codes: n\
-Newscraper scrapes reuters news and returns news polarity for a partivular stock over specified 
-period of time
+The repository contains two codes: 
+- Newscraper. scrapes reuters news and returns news polarity for a particular stock for each day over specified 
+period of time;
+- execution. takes preprocessed (preprocessing code is not posted) twitter data, runs regularized (l1) maxent 
+classification based on existing bullish or bearish tags (which constitutes a training set); filters obtained 
+dummy through the news polarity variable received from the Newscraper. and used reply and retweet connection between
+the authors to run the (geo)spatial lag regression using this filtered variable.
+
+The spatial lag coefficient determines herding level for a day
+
